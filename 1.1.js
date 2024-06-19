@@ -25,9 +25,9 @@ For example:
 To what floor do the instructions take Santa?
 */
 
-let fs = require('fs');
+import { readFile } from 'fs';
 
-fs.readFile(__dirname + '/inputs/1.1.txt', {
+readFile(__dirname + '/inputs/1.1.txt', {
 	encoding: 'utf8'
 }, (err, data) => {
 	if (err) throw err;

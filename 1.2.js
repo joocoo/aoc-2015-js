@@ -12,10 +12,10 @@ For example:
 What is the position of the character that causes Santa to first enter the basement?
 */
 
-let fs = require('fs');
-const { exit } = require('process');
+import { readFile } from 'fs';
+import { exit } from 'process';
 
-fs.readFile(__dirname + '/inputs/1.2.txt', {
+readFile(__dirname + '/inputs/1.2.txt', {
 	encoding: 'utf8'
 }, (err, data) => {
 	if (err) throw err;
